@@ -6,7 +6,7 @@
 /*   By: mukeles <mukeles@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/22 22:13:48 by mukeles           #+#    #+#             */
-/*   Updated: 2022/08/23 01:30:13 by mukeles          ###   ########.fr       */
+/*   Updated: 2022/08/23 12:11:22 by mukeles          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,7 +63,7 @@ int	main(int ac, char **av)
 {
 	t_list	**stack_a;
 	t_list	**stack_b;
-	int ar;
+	int		ar;
 
 	if (ac < 2)
 		return (-1);
@@ -85,6 +85,5 @@ int	main(int ac, char **av)
 		sort(stack_a, stack_b, ac - 1);
 	free_stack(stack_a);
 	free_stack(stack_b);
-	pause();
 	return (0);
 }

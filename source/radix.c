@@ -6,7 +6,7 @@
 /*   By: mukeles <mukeles@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/22 22:13:54 by mukeles           #+#    #+#             */
-/*   Updated: 2022/08/22 22:13:55 by mukeles          ###   ########.fr       */
+/*   Updated: 2022/08/23 13:12:55 by mukeles          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,7 +44,7 @@ void	radix_sort(t_list **stack_a, t_list **stack_b)
 	tmp = *stack_a;
 	size = ft_lstsize(tmp);
 	max_bits = get_max_bits(stack_a);
-	while (i < max_bits)
+	while (i < max_bits && !is_sorted(stack_a))
 	{
 		j = 0;
 		while (j++ < size)

@@ -6,7 +6,7 @@
 /*   By: mukeles <mukeles@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/22 22:13:35 by mukeles           #+#    #+#             */
-/*   Updated: 2022/08/23 01:11:30 by mukeles          ###   ########.fr       */
+/*   Updated: 2022/08/23 12:45:08 by mukeles          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,9 +63,7 @@ int	check_args(int ac, char **av)
 	while (tab[i])
 	{
 		num = ft_atoi(tab[i]);
-		if (!ft_isnum(tab[i]))
-			ft_error("Error");
-		if (ft_isrepeat(num, tab, i))
+		if (!ft_isnum(tab[i]) || ft_isrepeat(num, tab, i))
 			ft_error("Error");
 		if (num < -2147483648 || num > 2147483647)
 			ft_error("Error");
@@ -73,5 +71,5 @@ int	check_args(int ac, char **av)
 	}
 	if (ac == 2)
 		ft_free_str(tab);
-	return i;
+	return (i);
 }
