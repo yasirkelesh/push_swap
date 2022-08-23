@@ -6,7 +6,7 @@
 /*   By: mukeles <mukeles@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/22 22:13:38 by mukeles           #+#    #+#             */
-/*   Updated: 2022/08/22 22:13:39 by mukeles          ###   ########.fr       */
+/*   Updated: 2022/08/23 01:30:56 by mukeles          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,7 @@ void	ft_free_str(char **str)
 		i++;
 	while (i >= 0)
 		free(str[i--]);
+	free(str);
 }
 
 void	free_stack(t_list **stack)

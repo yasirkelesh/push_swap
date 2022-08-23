@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   push_swap.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: faozturk <faozturk@42kocaeli.tr>           +#+  +:+       +#+        */
+/*   By: mukeles <mukeles@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/14 12:42:22 by faozturk          #+#    #+#             */
-/*   Updated: 2022/06/21 13:01:28 by faozturk         ###   ########.tr       */
+/*   Updated: 2022/08/23 01:11:57 by mukeles          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ typedef struct stack_list
 }						t_list;
 //source
 void	ft_error(char *str);
-void	check_args(int ac, char **av);
+int	check_args(int ac, char **av);
 void	ft_free_str(char **str);
 void	free_stack(t_list **stack);
 void	index_stack(t_list **stack);

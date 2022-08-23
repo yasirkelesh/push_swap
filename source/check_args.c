@@ -6,7 +6,7 @@
 /*   By: mukeles <mukeles@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/22 22:13:35 by mukeles           #+#    #+#             */
-/*   Updated: 2022/08/22 22:13:36 by mukeles          ###   ########.fr       */
+/*   Updated: 2022/08/23 01:11:30 by mukeles          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,7 +46,7 @@ static int	ft_isnum(char *num)
 	return (1);
 }
 
-void	check_args(int ac, char **av)
+int	check_args(int ac, char **av)
 {
 	int		i;
 	long	num;
@@ -73,4 +73,5 @@ void	check_args(int ac, char **av)
 	}
 	if (ac == 2)
 		ft_free_str(tab);
+	return i;
 }
